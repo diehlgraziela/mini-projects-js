@@ -50,6 +50,7 @@ function displayMovies(data) {
 }
 
 form.addEventListener("submit", (e) => {
+    //Previne os eventos padrões do EventListener, nesse caso o submit levaria para outra página
     e.preventDefault();
 
     let searchTerm = search.value;
