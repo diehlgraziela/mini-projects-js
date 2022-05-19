@@ -12,8 +12,8 @@ let vote = document.querySelector("span");
 getMovies(APIUrl);
 
 async function getMovies(url) {
-    let res = await fetch(url);
-    let data = await res.json();
+    let response = await fetch(url);
+    let data = await response.json();
 
     console.log(data);
     displayMovies(data.results);
