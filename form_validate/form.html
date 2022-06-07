@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header id="header" class="animate__animated animate__slideInDown">
+        <a href="../index.html" class="home animate__animated animate__slideInLeft">← Voltar</a>
+    </header>
+
+    <div class="form-container">
+        <form action="" id="form">
+            <input name="nome" id="name" placeholder="Nome" type="text" autocomplete="off" data-length="3">
+            <span class="message"></span>
+
+            <input name="e-mail" id="email" placeholder="E-mail" type="email" autocomplete="off">
+            <span class="message">a</span>
+
+            <button id="button">Enviar</button>
+        </form>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

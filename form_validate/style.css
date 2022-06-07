@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    background: #7E78D2;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+a {
+    transition: 0.3s ease-in-out;
+    text-decoration: none;
+    color: #fff;
+}
+
+a:hover {
+    opacity: 0.6;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+}
+
+input,
+button {
+    font-size: 18px;
+    padding: 10px 8px;
+    width: 100%;
+    outline: none;
+}
+
+input {
+    border: none;
+    border-bottom: 2px solid #7E78D2;
+    color: #2e2c50;
+}
+
+input::placeholder {
+    color: #e4e4e4;
+}
+
+button {
+    border: none;
+    background: #7E78D2;
+    color: #fff;
+    transition: 0.3s ease-in-out;
+}
+
+button:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.form-container {
+    background: #fff;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    backdrop-filter: blur(8px);
+    padding: 45px;
+}
+
+.invalid {
+    color: #000;
+}
